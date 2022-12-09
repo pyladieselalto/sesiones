@@ -12,7 +12,7 @@
 
 ### Conociendo un poco mas sobre decorators
 
-- decorator normal @<cualquier nombre>
+- decorator normal @&lt;cualquier nombre&gt;
 
 - decorator especiales @wraps()
 
