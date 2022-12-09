@@ -33,13 +33,14 @@ print(steps_to_sin_cacheo(17))
 
 # contando el tiempo
 import time
+
 start_time_con_cache= time.time()
 print(steps_to_con_cacheo(17))
 stop_time_con_cache= time.time()
 time_con_cache=stop_time_con_cache - start_time_con_cache
 
 start_time_sin_cache= time.time()
-print(steps_to_con_cacheo(17))
+print(steps_to_sin_cacheo(17))
 stop_time_sin_cache= time.time()
 time_sin_cache=stop_time_sin_cache - start_time_sin_cache
 
