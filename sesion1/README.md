@@ -10,6 +10,12 @@
 
 - Caso de uso cachear una pagina ,guardar el contenido de cierta peticion, actualizar el contenido.
 
+### Conociendo un poco mas sobre decorators
+
+- decorator normal @<cualquier nombre>
+
+- decorator especiales @wraps()
+
 ### Referencias
 
 ### Concepto
