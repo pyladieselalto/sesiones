@@ -4,9 +4,9 @@
 
 from bs4 import BeautifulSoup
 import requests
-from models import BaseTranslator
-from constants import BASE_URLS, LANGUAGES_TO_CODES
-from exceptions import LanguageNotSupportedException, NotValidPayload
+from traslator.models import BaseTranslator
+from traslator.constants import BASE_URLS, LANGUAGES_TO_CODES
+from traslator.exceptions import LanguageNotSupportedException, NotValidPayload
 
 
 class GoogleTranslator(BaseTranslator):
@@ -60,9 +60,10 @@ class GoogleTranslator(BaseTranslator):
             }
 
             res = requests.get(self.__base_url, params=params)
-            soup = BeautifulSoup(res.text, 'html.parser')
-            res = soup.find("div", {"class": "t0"})
-            return res.get_text(strip=True)
+            print('>Response',res.text)
+            #soup = BeautifulSoup(res.text, 'html.parser')
+            #res = soup.find("div", {"class": "t0"})
+            return res#res.get_text(strip=True)
 
         except Exception as e:
             print(e.args)
