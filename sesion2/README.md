@@ -1,6 +1,6 @@
 ## Description
 
-Las session 2 de Pyladies el alto da a conocer el uso de conceptos de OPP
+Las session 2 de Pyladies el alto da a conocer el uso de conceptos de OOP
 y otros que podemos observar en proyectos OpenSource.
 
 En este caso veremos Classes Abstractas.
@@ -23,6 +23,8 @@ Los encontramos en GitHub
 
 ### Open First Issue Deep Traslator
 
+Deep Traslator tiene una licensia MIT(Free software, MIT license).Debes revisar esto antes de contribuir.
+
 Lo encontramos en la seccion de Issues.
 
 ### Clases Abstractas
@@ -36,9 +38,15 @@ fuente: https://platzi.com/blog/clases-abstractas/
 ## Test
 
 ```
-git clone 
-cd <>/sesion2.py
-python3 ejemplo.py
+git clone  https://github.com/pyladieselalto/sesiones.git
+cd sesiones/sesion2.py
+#primero has correr este ejemplo
+python3 ejemplo1.py
 ```
 
+Analizando el traductor 🔍.
+
 ## Contribuidores
+
+libialany
+
