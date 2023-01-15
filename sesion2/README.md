@@ -35,6 +35,14 @@ Las clases abstractas, como su nombre lo indica, son algo abstracto, no represen
 
 fuente: https://platzi.com/blog/clases-abstractas/
 
+## Objetivos:
+
+- Que es un Objeto
+- Porque usamos OOP
+- Porque analizamas deep traslator
+- Que conocemos de deep traslator
+
+
 ## Test
 
 ```
