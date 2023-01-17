@@ -1,6 +1,5 @@
+
 from abc import ABC, abstractmethod
-
-
 class BaseTranslator(ABC):
     def __init__(self):
         super(BaseTranslator, self).__init__()
@@ -10,5 +9,5 @@ class BaseTranslator(ABC):
         pass
 
     @abstractmethod
-    def translate(self, payload):
+    def translate(self, payload, payload_tag):
         pass

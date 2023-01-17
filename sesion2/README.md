@@ -1,60 +1,35 @@
-## Description
-
-Las session 2 de Pyladies el alto da a conocer el uso de conceptos de OOP
-y otros que podemos observar en proyectos OpenSource.
-
-En este caso veremos Classes Abstractas.
-
-## Indice
-
-- Good First Issues[Good First Issues](https://goodfirstissue.dev/language/python)
-
-- Open First Issue Deep Traslator[Open First Issue Deep Traslator](https://github.com/nidhaloff/deep-translator/commit/3e848bcca8f048587b6412a3eb5e43abe1a5cdbd)
-
-- Clases Abstractas[Clases Abstractas](https://towardsdatascience.com/how-to-use-abstract-classes-in-python-d4d2ddc02e90)
-
-### Good First Issues
-
-Un Good First Issues es una iniciativa para seleccionar fácilmente proyectos populares, de modo que los desarrolladores que nunca han contribuido al código abierto puedan empezar rápidamente. Los responsables de los proyectos de código abierto siempre quieren que participe más gente, pero los nuevos desarrolladores suelen pensar que es difícil colaborar.
-
-Los encontramos en GitHub
-
-[mas referencias](https://github.com/deepsourcelabs/good-first-issue)
-
-### Open First Issue Deep Traslator
-
-Deep Traslator tiene una licensia MIT(Free software, MIT license).Debes revisar esto antes de contribuir.
-
-Lo encontramos en la seccion de Issues.
-
-### Clases Abstractas
-
-¿Qué es una clase abstracta y para qué sirve?
-
-Las clases abstractas, como su nombre lo indica, son algo abstracto, no representan algo específico y las podemos usar para crear otras clases. No pueden ser instanciadas, por lo que no podemos crear nuevos objetos con ellas.
-
-fuente: https://platzi.com/blog/clases-abstractas/
-
-## Objetivos:
-
-- Que es un Objeto
-- Porque usamos OOP
-- Porque analizamas deep traslator
-- Que conocemos de deep traslator
 
 
-## Test
+
+
+source:
+f06c14ebdbcba5c07884ee5b16c27950990320b7
+
+
+descripcion:
+En este branch se adiciona un traductor.
+- PONS
+
+
+basica idea:
 
 ```
-git clone  https://github.com/pyladieselalto/sesiones.git
-cd sesiones/sesion2.py
-#primero has correr este ejemplo
-python3 ejemplo1.py
+import requests
+from requests.utils import quote
+from bs4 import BeautifulSoup
+_base_url = "https://en.pons.com/translate/"
+_source = "spanish"
+_target = "english"
+payload = "ver"
+url= "{}{}-{}/{}".format(_base_url, _source, _target, quote(payload))
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+res = soup.findAll("div", {"class":"target"})[0]
+print(res.get_text(strip=True))
 ```
 
-Analizando el traductor 🔍.
+para ejecutar:
 
-## Contribuidores
-
-libialany
-
+```
+python3 deep_traslate.py
+```

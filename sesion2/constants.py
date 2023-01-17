@@ -1,10 +1,7 @@
-# reference https://github.com/nidhaloff/deep-translator/commit/3e848bcca8f048587b6412a3eb5e43abe1a5cdb#diff-049678817ba40493e5689f68d636e6214b460e4cd05b39c5a8abeb76ffba8853
-
 BASE_URLS = {
     "GOOGLE_TRANSLATE": "https://translate.google.com/m",
-    "PONS": "https://en.pons.com/translate"
+    "PONS": "https://en.pons.com/translate/"
 }
-
 CODES_TO_LANGUAGES = {
     'af': 'afrikaans',
     'sq': 'albanian',
