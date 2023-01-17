@@ -5,7 +5,7 @@
 import pytest
 
 from deep_translator import GoogleTranslator
-from exceptions import LanguageNotSupportedException, NotValidPayload
+from exceptions import LanguageNotSupportedException
 
 @pytest.fixture
 def response():
