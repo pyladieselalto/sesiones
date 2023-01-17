@@ -1,60 +1,51 @@
-## Description
 
-Las session 2 de Pyladies el alto da a conocer el uso de conceptos de OOP
-y otros que podemos observar en proyectos OpenSource.
+__NOTA:__ 
 
-En este caso veremos Classes Abstractas.
-
-## Indice
-
-- Good First Issues[Good First Issues](https://goodfirstissue.dev/language/python)
-
-- Open First Issue Deep Traslator[Open First Issue Deep Traslator](https://github.com/nidhaloff/deep-translator/commit/3e848bcca8f048587b6412a3eb5e43abe1a5cdbd)
-
-- Clases Abstractas[Clases Abstractas](https://towardsdatascience.com/how-to-use-abstract-classes-in-python-d4d2ddc02e90)
-
-### Good First Issues
-
-Un Good First Issues es una iniciativa para seleccionar fácilmente proyectos populares, de modo que los desarrolladores que nunca han contribuido al código abierto puedan empezar rápidamente. Los responsables de los proyectos de código abierto siempre quieren que participe más gente, pero los nuevos desarrolladores suelen pensar que es difícil colaborar.
-
-Los encontramos en GitHub
-
-[mas referencias](https://github.com/deepsourcelabs/good-first-issue)
-
-### Open First Issue Deep Traslator
-
-Deep Traslator tiene una licensia MIT(Free software, MIT license).Debes revisar esto antes de contribuir.
-
-Lo encontramos en la seccion de Issues.
-
-### Clases Abstractas
-
-¿Qué es una clase abstracta y para qué sirve?
-
-Las clases abstractas, como su nombre lo indica, son algo abstracto, no representan algo específico y las podemos usar para crear otras clases. No pueden ser instanciadas, por lo que no podemos crear nuevos objetos con ellas.
-
-fuente: https://platzi.com/blog/clases-abstractas/
-
-## Objetivos:
-
-- Que es un Objeto
-- Porque usamos OOP
-- Porque analizamas deep traslator
-- Que conocemos de deep traslator
+Source:3e848bcca8f048587b6412a3eb5e43abe1a5cdbd
 
 
-## Test
+### REQUISITOS
 
 ```
-git clone  https://github.com/pyladieselalto/sesiones.git
-cd sesiones/sesion2.py
-#primero has correr este ejemplo
-python3 ejemplo1.py
+git clone  --branch=v2 <este-repo>
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
-Analizando el traductor 🔍.
+### PRIMEROS PASOS
 
-## Contribuidores
+```
+python3 workshop/ejemplo_sencillo_bs4.py
+python3 workshop/ejemplo_sencillo_req.py
+```
+____
 
-libialany
+```
+# set path
+export PYTHONPATH="<your path>/deep-traslate/version1/deep_translator"
+
+# added test
+pytest test/test_deep_translator.py
+
+```
+
+cambios:
+
+```
+#deep_traslater.py
+            # res = soup.find("div", {"class": "t0"})
+            res = soup.find("div", {"class": "result-container"})
+```
+
+ejecutar el codigo:
+
+```
+python3 examples/trans.py
+```
+
+nuevos conceptos:
+
+- pytest
+- python import module
 

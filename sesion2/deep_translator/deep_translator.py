@@ -1,12 +1,10 @@
-# source: https://github.com/nidhaloff/deep-translator/commit/3e848bcca8f048587b6412a3eb5e43abe1a5cdb
-
 """Main module."""
 
 from bs4 import BeautifulSoup
 import requests
-from traslator.models import BaseTranslator
-from traslator.constants import BASE_URLS, LANGUAGES_TO_CODES
-from traslator.exceptions import LanguageNotSupportedException, NotValidPayload
+from models import BaseTranslator
+from constants import BASE_URLS, LANGUAGES_TO_CODES
+from exceptions import LanguageNotSupportedException, NotValidPayload
 
 
 class GoogleTranslator(BaseTranslator):
@@ -46,7 +44,6 @@ class GoogleTranslator(BaseTranslator):
         return True
 
     def translate(self, payload):
-
         valid = self._validate_payload(payload)
         if not valid:
             raise NotValidPayload(payload)
@@ -60,10 +57,10 @@ class GoogleTranslator(BaseTranslator):
             }
 
             res = requests.get(self.__base_url, params=params)
-            print('>Response',res.text)
-            #soup = BeautifulSoup(res.text, 'html.parser')
-            #res = soup.find("div", {"class": "t0"})
-            return res#res.get_text(strip=True)
+            soup = BeautifulSoup(res.text, 'html.parser')            
+            # res = soup.find("div", {"class": "t0"})
+            res = soup.find("div", {"class": "result-container"})
+            return res.get_text(strip=True)
 
         except Exception as e:
             print(e.args)

@@ -1,5 +1,3 @@
-#referencia: https://github.com/nidhaloff/deep-translator/commit/3e848bcca8f048587b6412a3eb5e43abe1a5cdb#diff-fff2aadfcbe60a8f1ff7e105a4e5fffc21fce2e326cec1937b612c0ed8adb072
-
 class BaseError(Exception):
     def __init__(self, val, message):
         self.val = val

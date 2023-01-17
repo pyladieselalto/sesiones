@@ -1,0 +1,4 @@
+venv
+deep_translator/__pycache__*
+deep_translator/examples/__pycache__*
+deep_translator/test/__pycache__*
