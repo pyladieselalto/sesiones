@@ -3,15 +3,21 @@ __NOTA:__
 
 ### REQUISITOS
 
+TENEMOS 2 REPOS:
+
+- https://github.com/mickhacking/PyladiesTranslator.git
+- https://github.com/pyladieselalto/sesiones.git
+
 ```
-git clone  <este-repo>
+git clone <lo-dos-repos>
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+
 ## Objetivos
 
-Aprender un poco de Webscraping.
+Aprender un poco de Web.
 
 cambios:
 
