@@ -3,6 +3,10 @@ __NOTA:__
 
 ### REQUISITOS
 
+![image](https://user-images.githubusercontent.com/120072170/213825088-69adc650-a389-4383-8acc-57703db2bea9.png)
+
+
+
 TENEMOS 2 REPOS:
 
 - https://github.com/mickhacking/PyladiesTranslator.git
